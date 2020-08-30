@@ -14,6 +14,9 @@ import rh.modelo.Funcionario;
 @RequestScoped
 public class FuncionarioMBean {
     Funcionario funcionario = new Funcionario();
+  
+  
+    
 
    @PostConstruct
    public void init(){
@@ -27,8 +30,11 @@ public class FuncionarioMBean {
         this.funcionario = funcionario;
     }
     
+   
+    
     //depois de clicar no botao guardar, o clique nos leva a uma pagina de nome resultado
     public String guardar(){
+        
         
         return "resultado";
     }

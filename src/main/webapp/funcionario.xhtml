@@ -12,7 +12,13 @@
                 <h:inputText id="nome" value="#{funcionarioMBean.funcionario.nome}"/>
                 
                 <h:outputLabel value="Sobrenome" for="sobrenome"/>
-                <h:inputText id="sobrenome" value="#{funcionarioMBean.funcionario.sobrenome}"/>            
+                <h:inputText id="sobrenome" value="#{funcionarioMBean.funcionario.sobrenome}"/>
+                
+             
+                <h:outputLabel value="Peso" for="peso"/>
+                <h:inputText id="peso" value="#{funcionarioMBean.funcionario.peso}"/>
+                <h:outputLabel value="Altura" for="altura"/>
+                <h:inputText id="altura" value="#{funcionarioMBean.funcionario.altura}"/>
             </h:panelGrid>  
 
             <h:commandButton value="Guardar" action="#{funcionarioMBean.guardar}"/> 
