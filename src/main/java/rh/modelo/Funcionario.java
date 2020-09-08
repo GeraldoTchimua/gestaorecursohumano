@@ -1,5 +1,7 @@
-
+    
 package rh.modelo;
+
+import java.util.Date;
 
 /**
  *
@@ -8,9 +10,13 @@ package rh.modelo;
 public class Funcionario {
     private String nome;
     private String sobrenome;
-    private String departamento;
-    private int idade;
+    private Departamento departamento;
+    private Date dataNascimento;
     private double salario;
+    private  String casa;
+    private String rua;
+    private String bairro;
+    private Municipio municipio;
     
     /*private double peso;
     private double altura;
@@ -19,11 +25,10 @@ public class Funcionario {
     public Funcionario() {
     }
 
-    public Funcionario(String nome, String sobrenome, String departamento, int idade, double salario) {
+    public Funcionario(String nome, String sobrenome, String departamento, double salario) {
         this.nome = nome;
-        this.sobrenome = sobrenome;
-        this.departamento = departamento;
-        this.idade = idade;
+        this.sobrenome = sobrenome;       
+        
         this.salario = salario;
     }
 
@@ -35,20 +40,12 @@ public class Funcionario {
         this.salario = salario;
     }
 
-    public String getDepartamento() {
-        return departamento;
+    public Date getDataNascimento() {
+        return dataNascimento;
     }
 
-    public void setDepartamento(String departamento) {
-        this.departamento = departamento;
-    }
-
-    public int getIdade() {
-        return idade;
-    }
-
-    public void setIdade(int idade) {
-        this.idade = idade;
+    public void setDataNascimento(Date dataNascimento) {
+        this.dataNascimento = dataNascimento;
     }
 
     public String getNome() {
@@ -66,6 +63,48 @@ public class Funcionario {
     public void setSobrenome(String sobrenome) {
         this.sobrenome = sobrenome;
     }
+
+    public String getCasa() {
+        return casa;
+    }
+
+    public void setCasa(String casa) {
+        this.casa = casa;
+    }
+
+    public String getRua() {
+        return rua;
+    }
+
+    public void setRua(String rua) {
+        this.rua = rua;
+    }
+
+    public String getBairro() {
+        return bairro;
+    }
+
+    public void setBairro(String bairro) {
+        this.bairro = bairro;
+    }
+
+    public Departamento getDepartamento() {
+        return departamento;
+    }
+
+    public void setDepartamento(Departamento departamento) {
+        this.departamento = departamento;
+    }
+
+    public Municipio getMunicipio() {
+        return municipio;
+    }
+
+    public void setMunicipio(Municipio municipio) {
+        this.municipio = municipio;
+    }
+
+ 
 
     
     
